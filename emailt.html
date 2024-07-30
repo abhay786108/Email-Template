@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Upcoming Trip</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            /* background: linear-gradient(45deg, rgb(1, 99, 112) 50%, rgb(60, 58, 58) 50%); */
+            background:rgb(21, 20, 20);
+            padding: 20px;
+            text-align: center;
+            color: white;
+            height: 130px;
+            border-radius: 10px 10px 0 0;
+        }
+        .header img {
+            max-width: 250px;
+            margin-bottom: 10px;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+            /* box-shadow: 0 0 100px greenyellow; */
+        }
+        .trip-summary {
+            padding: 10px;
+            background-color: #ffffff;
+            border-radius: 0 0 10px 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            display: flex;
+            align-items: center;
+            padding-left: 100px;
+        }
+        .trip-summary img {
+            width:auto;
+            height: auto;
+            border-radius:0;
+            margin-right: 10px;
+        }
+        .trip-summary div {
+            flex-grow: 1;
+        }
+        .trip-summary p {
+            margin: 5px 0;
+            font-size: 14px;
+        }
+        .badge {
+            background-color: #121312;
+            color: white;
+            padding: 5px 10px;
+            border-radius:0 0 0 5px;
+            margin-top:-170px;
+            margin-left:550px;
+            font-size:14px;
+        }
+        .section {
+            margin: 20px 0;
+        }
+        .section h2 {
+            font-size: 20px;
+            color: #6f2055;
+            margin-bottom: 10px;
+        }
+        .section p {
+            margin: 5px 0;
+            color: #555;
+        }
+        .info {
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 0 10px 10px 10px;
+            background-color: #f7f8da;
+            margin-bottom: 15px;
+        }
+        .columns {
+            display: flex;
+            justify-content: space-between;
+        }
+        .column {
+            flex: 1;
+            padding: 0 10px;
+        }
+        .column p {
+            margin: 5px 0;
+        }
+        .footer {
+            text-align: center;
+            color: #999;
+            margin-top: 20px;
+            font-size: 12px;
+        }
+        .payment-summary {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 0px;
+            border: 1px solid #ddd;
+            padding: 15px;
+            background-color: #f0f8ff;
+            border-radius: 0 10px;
+        }
+        .payment-summary div {
+            flex: 1;
+            padding: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="http://car.edorotechnologies.com/Content/images/logo.svg" alt="Website Logo">
+            <p style="position: relative; left: -298px;top:20px;font-size:14px;">Email:- email@gmail.com</p>
+            <h1 style="position: relative;top:-30px;font-size:20px;">Your Upcoming Trip</h1>
+            
+              
+            <p class="badge">Booking ID: CFMO000004</p>
+        </div>
+        <div class="trip-summary" style="font-size: 14px;">
+            <img src="https://www.globalmediaserver.com/images/cars/HyundaiVeloster_4.jpg" alt="Car Image">
+            <div class="car-info" style="margin-left:50px;margin-top:-20px;padding-top:0; padding:10px" >
+                <h3>Chevrolet Spark</h3>
+                <p>Economy | 4-5 Door</p>
+                <div class="details">
+                  <span class="icon">&#x2714;</span>
+                  <span>Pay at Pick-up</span>
+                </div>
+                <div class="details">
+                  <span class="icon">&#x2714;</span>
+                  <span>Fully AirConditioning</span>
+                </div>
+                <div class="details">
+                  <span class="icon">&#x2714;</span>
+                  <span>Automatic Transmission</span>
+                </div><br>
+                <div style="margin-left:10px;">
+                    <i class="fa-solid fa-suitcase-rolling" style="Color:white; padding:4px; font-size:12px; background-color: rgb(0, 0, 0);border-radius: 3px;">&nbsp;3</i>
+                    <i class="fa-solid fa-users" style="Color:white; padding:4px;font-size: 12px;background-color: rgb(0, 0, 0);border-radius: 3px;">&nbsp;5</i>
+                    <i class="fa-solid fa-door-open" style="Color:white; padding:4px; font-size: 12px;background-color: rgb(0, 0, 0);border-radius: 3px;">&nbsp;2</i>
+                </div>
+              </div>
+        </div>
+        <div class="section">
+            <span style="background:red;font-size: 16px; border: 1px solid #d4d2d2;
+            border-radius: 0 10px 0 0;border-bottom: none;
+            background-color: #f7f8da; padding:2px 5px;font-weight: bold;font-family: 'Times New Roman', Times, serif;">Pick-Up & Drop-Off Information</span>
+            <span style="background:red;font-size: 16px; border: 1px solid #d4d2d2;
+            border-radius: 10px 10px 0 0;border-bottom: none;
+            background-color: #f7f8da; padding:2px 5px;font-weight: bold;font-family: 'Times New Roman', Times, serif;position: relative;left: 200px;">Price information</span>
+            <div class="info columns">
+                <div class="column">
+                    <p style="color: black;font-weight: bold;font-size: 14px;"><strong>Pick-Up:</strong></p>
+                    <p style="font-size: 12px;">Wed, Jul 24, 2024, 06:30:20</p>
+                    <p style="font-size: 12px;">Federal Circle Bldg #312, New York JFK Airport, 11430</p>
+                </div>
+                <div class="column">
+                    <p style="color: black;font-weight: bold;font-size: 14px;"><strong>Drop-Out:</strong></p>
+                    <p style="font-size: 12px;">Wed, Jul 24, 2024, 06:30:20</p>
+                    <p style="font-size: 12px;">Federal Circle Bldg #312, New York JFK Airport, 11430</p>
+                </div>
+                <div class="column" style="text-align: left;">
+                    <table style="padding: 10px; width:400px; font-size: 14px;">
+                        <tr>
+                            <th>Supplemental Liability Insurance</th>
+                            <td>$32.32</td>
+                        </tr>
+                        <tr>
+                            <th>Tolls-Perday</th>
+                            <td>$2.90</td>
+                        </tr>
+                        <tr>
+                            <th>Car Rental Tax</th>
+                            <td>$41.2</td>
+                        </tr>
+                        <tr>
+                            <th>P.A.I. Local Cost</th>
+                            <td>$32.32</td>
+                        </tr>
+                        <tr>
+                            <th>Supplemental Liability Insurance</th>
+                            <td>$32.32</td>
+                        </tr>
+                       
+                    </table>
+                    <div style="text-align: left;border-top: 1px solid black;">
+                        <table style=" width:400px;text-align:center; font-size: 14px;">
+                            <tr>
+                                <th>Subtotal</th>
+                                <td>$1009.32</td>
+                            </tr>
+                            <tr>
+                                <th>Total Price</th>
+                                <td>$32.32</td>
+                            </tr>
+                        </table>
+                    </div>
+                    
+                </div>
+               
+            </div>
+        </div>
+       
+        <div class="section">
+            <span style="background:red;font-size:16px; border: 1px solid #d4d2d2;
+            border-radius: 0 10px 0 0;border-bottom: none;
+            background-color: #faefef; padding:2px 5px;font-weight: bold;font-family: 'Times New Roman', Times, serif;">Driver Info</span>
+            <div class="info columns" style="background-color: #faefef; padding-left:20px;font-size: 14px;">
+                <div class="column" style="line-height:20px;">
+                    <p style="color: black;font-weight: bold;"><strong>First Name -</strong></p>
+                    <p style="color: black;font-weight: bold;"><strong>Last Name -</strong></p>
+                    <p style="color: black;font-weight: bold;"><strong>License issued by -</strong></p>
+                    <p style="color: black;font-weight: bold;"><strong>Driver's age - </strong></p>
+                </div>
+                <div class="column" style="line-height:20px;">
+                    <p><strong>Abhay</strong></p>
+                    <p><strong>Upadhyay</strong></p>
+                    <p><strong>India</strong></p>
+                    <p><strong>25 & Over</strong></p>
+                </div>
+                <div class="column" style="line-height:20px;">
+                    <p style="color: black;font-weight: bold;"><strong>Street Address - </strong></p>
+                    <p style="color: black;font-weight: bold;"><strong>Country - </strong></p>
+                    <p style="color: black;font-weight: bold;"><strong>City - </strong></p>
+                    <p style="color: black;font-weight: bold;"><strong>State/Province - </strong></p>
+                </div>
+                <div class="column" style="line-height:20px;">
+                    <p><strong>Janki Puram Sector-D</strong></p>
+                    <p><strong>India</strong></p>
+                    <p><strong>Lucknow 226021</strong></p>
+                    <p><strong>Uttar Pradesh</strong></p>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <span style="background:red;font-size:16px; border: 1px solid #d4d2d2;
+            border-radius: 0 10px 0 0;border-bottom: none;
+            background-color: #f0f8ff; padding:2px 5px;font-weight: bold;font-family: 'Times New Roman', Times, serif;">Payment Summary</span>
+            <div class="payment-summary" style="font-size: 14px;">
+                <div>
+                    <p><strong>Card No:</strong> </p>
+                    <p><strong>Card Holder Name:</strong> </p>
+                    <p><strong>Expiration Date:</strong> </p>
+                    <p><strong>CVV:</strong> </p>
+                </div>
+                <div>
+                    <p>XXXX XXXX XXXX X420</p>
+                    <p>Abhay Kumar Upadhyay</p>
+                    <p>13/01/2030</p>
+                    <p>420</p>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <span style="background:red;font-size:16px; border: 1px solid #d4d2d2;
+            border-radius: 0 10px 0 0;border-bottom: none;
+            background-color: #e3f7df; padding:2px 5px;font-weight: bold;font-family: 'Times New Roman', Times, serif;">Addon Equipments Details</span>
+            
+            <div class="info columns" style="background-color: #e3f7df; font-size: 14px;">
+                <div class="column" style="line-height:25px;">
+                    <p style="color: black;font-weight: bold;"><strong>BOOSTER SEATS</strong></p>
+                    <p style="color: black;font-weight: bold;"><strong>CHILD SEATS</strong></p>
+                    <p style="color: black;font-weight: bold;"><strong>GPS</strong></p>
+                </div>
+                <div class="column" style="line-height:25px;">
+                    <p><strong>$ 13.99/Rental</strong></p>
+                    <p><strong>$ 13.99/Rental</strong></p>
+                    <p><strong>$ 16.99/Rental</strong></p>
+                </div>
+                <div class="column" style="line-height:25px;">
+                    <p><strong>2</strong></p>
+                    <p><strong>3</strong></p>
+                    <p><strong>1</strong></p>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <p>Prices in USD include all taxes and fees. The $518.00 estimate provided is based on the exchange rate at the time of booking.</p>
+            <p style="position: relative; left: 270px;color:rgb(0, 0, 0);font-weight: bold;">Booking Time:- 10/03/2024 09:12:23 PM</p>
+        </div>
+    </div>
+</body>
+</html>
